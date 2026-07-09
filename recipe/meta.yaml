@@ -1,4 +1,4 @@
-{% set version = "2.8.0" %}
+{% set version = "2.8.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/visreg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/visreg/visreg_{{ version }}.tar.gz
-  sha256: ead3889170c3547338c2c23895970ad8e7b8896877748aaaeac0d827774a8402
+  sha256: ebf659675e838f11a8af1f3aa573fc7900ffa661df0fa4c147b0db7e6f1da8fa
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
